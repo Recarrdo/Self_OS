@@ -1,12 +1,3 @@
-/**
- *  file    ImageMaker.c
- *  date    2008/12/16
- *  author  kkamagui 
- *          Copyright(c)2008 All rights reserved by kkamagui
- *  brief   부트 로더와 커널 이미지를 연결하고, 섹터 단위로 정렬해 주는 ImageMaker의 
- *          소스 파일
- */
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <fcntl.h>
@@ -19,7 +10,8 @@
 
 // 함수 선언
 int AdjustInSectorSize( int iFd, int iSourceSize );
-void WriteKernelInformation( int iTargetFd, int iTotalKernelSectorCount, int iKernel32SectorCount );
+void WriteKernelInformation( int iTargetFd, int iTotalKernelSectorCount, 
+        int iKernel32SectorCount );
 int CopyFile( int iSourceFd, int iTargetFd );
 
 /**
