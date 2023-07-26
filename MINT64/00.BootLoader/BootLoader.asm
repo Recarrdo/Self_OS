@@ -238,7 +238,7 @@ PRINTMESSAGE:
 ;   데이터 영역
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ; 부트 로더 시작 메시지
-MESSAGE1:    db 'MINT64 OS Boot Loader Start~!!', 0 ; 출력할 메시지 정의
+MESSAGE1:    db 'MK64 OS Boot Loader Start~!!', 0 ; 출력할 메시지 정의
                                                     ; 마지막은 0으로 설정하여 .MESSAGELOOP에서 
                                                     ; 문자열이 종료되었음을 알 수 있도록 함
 DISKERRORMESSAGE:       db  'DISK Error~!!', 0
